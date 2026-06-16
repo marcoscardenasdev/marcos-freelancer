@@ -10,35 +10,53 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model **/
-    scroll-snap-type: y mandatory;
-}
-/** Scroll Snap**/
-.servicios,
-.navegacion-principal,
-.formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 16px;
 }
 
-.navegacion-principal {
-    display: flex;
-    justify-content: end;
-    padding: 16px 24px;
+p {
+    color: var(--font-sm-color);
 }
 
-.navegacion-principal a {
+h1, h2, h3 {
+    color: var(--font-large-color);
+}
+
+a {
     text-decoration: none;
     color: var(--font-sm-color);
     font-size: 1.6rem;
-    font-weight: normal;
+}
+
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 0 auto;
+}
+
+.enlace-principal {
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btn-contratar {
+    border-radius: 20px;
+    background-color: var(--primary);
+    padding: 8px 40px;
+    text-align: center;
+    color: var(--neutral);
 }
 
 .header {
@@ -67,7 +85,27 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 64px 80px;
+}
+
+.img-set-up {
+    height: 400px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.contenedor-tecnologia {
+    border-radius: 15px;
+    margin: 0 8px;
+    padding: 4px 16px;
+    height: 10%;
+    background-color: #E0E3E5;
+}
+
+
+.tecnologias {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .servicios {
@@ -137,4 +175,38 @@ body {
     font-size: 1.6rem;
     font-weight: normal;
     color: var(--font-sm-color);
+}
+
+.section-formulario {
+    padding-bottom: 2rem;
+}
+
+.formulario.btn-contratar {
+    text-align: end;
+}
+
+.formulario fieldset {
+    border-radius: 1.2rem;
+    padding: 5.7rem 4rem 4rem 4rem;
+    margin: 0 2.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input[type='text'] {
+    padding: 1rem 1.6rem 1.2rem 1.6rem;
+    border-radius: 0.6rem;
+    background-color: #FFFFFF;
+}
+
+footer {
+    padding: 0 8rem;
+}
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2.4rem;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #F2F4F6;
 }
