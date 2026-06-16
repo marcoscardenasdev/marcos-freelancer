@@ -10,35 +10,67 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model **/
-    scroll-snap-type: y mandatory;
-}
-/** Scroll Snap**/
-.servicios,
-.navegacion-principal,
-.formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 16px;
 }
 
-.navegacion-principal {
-    display: flex;
-    justify-content: end;
-    padding: 16px 24px;
+p, a {
+    color: var(--font-sm-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
-.navegacion-principal a {
+h1,
+h2,
+h3 {
+    color: var(--font-large-color);
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
     text-decoration: none;
     color: var(--font-sm-color);
     font-size: 1.6rem;
-    font-weight: normal;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 0 auto;
+}
+
+
+
+.enlace-principal {
+    width: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.btn-contratar {
+    border-radius: 20px;
+    background-color: var(--primary);
+    padding: 8px 40px;
+    text-align: center;
+    color: var(--neutral);
 }
 
 .header {
@@ -59,15 +91,50 @@ body {
     color: var(--font-sm-color);
 }
 
-.header h1, .header p {
+.header h1,
+.header p {
     text-align: center;
+}
+
+.header .btn-contratar {
+    margin-bottom: 2.4rem;
 }
 
 .sobre-mi {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 64px 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+    background-color: #F8FAFC;
+}
+
+.contenido-texto {
+    flex: 1;
+}
+
+.img-set-up {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.contenedor-tecnologia {
+    border-radius: 15px;
+    padding: 6px 16px;
+    background-color: #E0E3E5;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
 }
 
 .servicios {
@@ -137,4 +204,89 @@ body {
     font-size: 1.6rem;
     font-weight: normal;
     color: var(--font-sm-color);
+}
+
+.section-formulario {
+    width: auto;
+    height: auto;
+    padding: 6.4rem 8rem 8rem 8rem;
+}
+
+.contenedor-formulario {
+    margin: 0 2.3rem;
+    padding: 0 2.4rem;
+}
+
+.formulario fieldset {
+    border-radius: 1.2rem;
+    padding: 5.7rem 4rem 4rem 4rem;
+    margin: 0 2.4rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+}
+
+.formulario input[type='text'],
+.formulario input[type='email'],
+.formulario textarea {
+    padding: 1rem 1.6rem 1.2rem 1.6rem;
+    border-radius: 0.6rem;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contenedor-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.campo:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+.input-text {
+    width: 100%;
+}
+
+.formulario .btn-contratar {
+    grid-column: 1 / 3;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 2.4rem;
+    background-color: var(--primary);
+    color: var(--neutral);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+footer {
+    padding: 0 8rem;
+}
+
+.contenedor-footer .enlace-principal {
+    width: 30%;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 2.4rem;
+    margin: 0 auto;
+    background-color: #F2F4F6;
+}
+
+.contenedor-footer p {
+    width: 40%;
 }
