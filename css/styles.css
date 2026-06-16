@@ -13,7 +13,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -21,12 +23,23 @@ body {
     font-size: 16px;
 }
 
-p {
+p, a {
     color: var(--font-sm-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--font-large-color);
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 a {
@@ -35,13 +48,13 @@ a {
     font-size: 1.6rem;
 }
 
-    .navegacion-principal {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 16px 24px;
-        margin: 0 auto;
-    }
+.navegacion-principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px 24px;
+    margin: 0 auto;
+}
 
 
 
@@ -78,35 +91,50 @@ a {
     color: var(--font-sm-color);
 }
 
-.header h1, .header p {
+.header h1,
+.header p {
     text-align: center;
+}
+
+.header .btn-contratar {
+    margin-bottom: 2.4rem;
 }
 
 .sobre-mi {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px;
+    background-color: #F8FAFC;
+}
+
+.contenido-texto {
+    flex: 1;
 }
 
 .img-set-up {
-    height: 400px;
     width: 500px;
+    height: auto;
     border-radius: 20px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .contenedor-tecnologia {
     border-radius: 15px;
-    margin: 0 8px;
-    padding: 4px 16px;
-    height: 10%;
+    padding: 6px 16px;
     background-color: #E0E3E5;
-}
-
-
-.tecnologias {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
 }
 
 .servicios {
@@ -179,25 +207,67 @@ a {
 }
 
 .section-formulario {
-    padding-bottom: 2rem;
+    width: auto;
+    height: auto;
+    padding: 6.4rem 8rem 8rem 8rem;
 }
 
-.formulario.btn-contratar {
-    text-align: end;
+.contenedor-formulario {
+    margin: 0 2.3rem;
+    padding: 0 2.4rem;
 }
 
 .formulario fieldset {
     border-radius: 1.2rem;
     padding: 5.7rem 4rem 4rem 4rem;
     margin: 0 2.4rem;
-    display: flex;
-    flex-direction: column;
 }
 
-.formulario input[type='text'] {
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    margin-bottom: 0.5rem;
+}
+
+.formulario input[type='text'],
+.formulario input[type='email'],
+.formulario textarea {
     padding: 1rem 1.6rem 1.2rem 1.6rem;
     border-radius: 0.6rem;
     background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.contenedor-campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+
+.campo:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+.input-text {
+    width: 100%;
+}
+
+.formulario .btn-contratar {
+    grid-column: 1 / 3;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 2.4rem;
+    background-color: var(--primary);
+    color: var(--neutral);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
 }
 
 footer {
