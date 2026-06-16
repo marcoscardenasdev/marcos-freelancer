@@ -4,6 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Marcos - Freelancer</title>
 </head>
@@ -26,20 +35,26 @@
     </header>
 
     <section class="sobre-mi">
-        <h2>Sobre Mi</h2>
-        <p>Soy un apasionado del codigo limpio y el diseño intuitivo. <br> Mi enfoque se centra en crear soluciones
-            digitales que no solo funcionan a la perfeccion, sino que tambien ofrezcan una experiencias de usuario
-            excepcional.</p>
 
-        <p>Creo firmemente en el aprendizaje constante y en mantenerme actualizado con las ultimas tecnologias web para
-            ofrecer siempre el mejor resultado posible a mis clientes</p>
-        <!--<div class="tecnologias">
-            <p class="contenedor-tecnologia">HTML5</p>
-            <p class="contenedor-tecnologia">CSS3</p>
-            <p class="contenedor-tecnologia">JavaScript</p>
-            <p class="contenedor-tecnologia">Tailwind CSS</p>
-        </div>-->
+        <div class="contenido-texto">
+            <h2>Sobre Mi</h2>
+            <p>Soy un apasionado del codigo limpio y el diseño intuitivo. <br> Mi enfoque se centra en crear soluciones
+                digitales que no solo funcionan a la perfeccion, sino que tambien ofrezcan una experiencias de usuario
+                excepcional.</p>
+
+            <p>Creo firmemente en el aprendizaje constante y en mantenerme actualizado con las ultimas tecnologias web
+                para ofrecer siempre el mejor resultado posible a mis clientes</p>
+
+            <div class="tecnologias">
+                <p class="contenedor-tecnologia">HTML5</p>
+                <p class="contenedor-tecnologia">CSS3</p>
+                <p class="contenedor-tecnologia">JavaScript</p>
+                <p class="contenedor-tecnologia">Tailwind CSS</p>
+            </div>
+        </div>
+
         <img class="img-set-up" src="assets/set-up.png" alt="Imagen de un set-up animado">
+
     </section>
 
     <section class="servicios">
@@ -95,24 +110,34 @@
     </section>
 
     <section class="section-formulario">
-        <h2>¿Listo para empezar tu proyecto?</h2>
-        <p>Estoy dispuesto para nuevos proyectos y oportunidades. Enviame un mensaje y hablemos sobre como puedo
-            ayudarte
-        </p>
+        <div class="contenedor-formulario">
+            <h2>¿Listo para empezar tu proyecto?</h2>
+            <p>Estoy dispuesto para nuevos proyectos y oportunidades. Enviame un mensaje y hablemos sobre como puedo
+                ayudarte
+            </p>
 
-        <form class="formulario">
-            <fieldset>
+            <form class="formulario">
+                <fieldset>
 
-
-                <label>Nombre</label>
-                <input type="text" placeholder="Tu nombre">
-                <label>Email</label>
-                <input type="email" placeholder="tu@email.com">
-                <label>Mensaje</label>
-                <textarea type="text" placeholder="Cuentame sobre tu proyecto"></textarea>
-                <input class="btn-contratar" type="submit" value="Enviar Mensaje">
-            </fieldset>
-        </form>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Email</label>
+                            <input class="input-text" type="email" placeholder="tu@email.com">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" type="text"
+                                placeholder="Cuentame sobre tu proyecto"></textarea>
+                        </div>
+                        <input class="btn-contratar" type="submit" value="Enviar Mensaje">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </section>
 
     <footer>
