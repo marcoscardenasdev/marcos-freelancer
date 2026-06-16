@@ -1,0 +1,140 @@
+:root {
+    --primary: #2563EB;
+    --secondary: #0D9488;
+    --tertiary: #BC4800;
+    --neutral: #F8FAFC;
+
+    --font-sm-color: #434655;
+    --font-large-color: #191C1E;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+/** Scroll Snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: end;
+    padding: 16px 24px;
+}
+
+.navegacion-principal a {
+    text-decoration: none;
+    color: var(--font-sm-color);
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 24px;
+}
+
+.header h1 {
+
+    font-size: 4.8rem;
+    color: var(--font-large-color);
+}
+
+.header p {
+    font-size: 1.8rem;
+    color: var(--font-sm-color);
+}
+
+.header h1, .header p {
+    text-align: center;
+}
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 64px 80px;
+}
+
+.servicios {
+    text-align: center;
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.servicios h2 {
+    font-size: 3.2rem;
+    color: var(--font-large-color);
+    font-weight: bold;
+}
+
+.servicios p {
+    font-size: 1.6rem;
+    color: var(--font-sm-color);
+    font-weight: normal;
+}
+
+
+.servicio {
+    padding: 40px;
+    margin: 15px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+    border-width: 1px;
+    background-color: var(--neutral);
+    text-align: start;
+}
+
+.contenedor-icon {
+    border-radius: 8px;
+    width: 4.8rem;
+    height: 4.8rem;
+    color: var(--neutral);
+    text-align: center;
+    padding: 1rem;
+}
+
+.contenedor-icon.web {
+    background-color: var(--primary);
+}
+
+.contenedor-icon.tool {
+    background-color: var(--secondary);
+    border-color: var(--primary);
+}
+
+.contenedor-icon.perfomance {
+    background-color: var(--tertiary);
+}
+
+.servicio h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--font-large-color);
+}
+
+.servicio p {
+    font-size: 1.6rem;
+    font-weight: normal;
+    color: var(--font-sm-color);
+}
