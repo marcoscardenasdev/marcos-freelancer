@@ -35,14 +35,15 @@ a {
     font-size: 1.6rem;
 }
 
+    .navegacion-principal {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 16px 24px;
+        margin: 0 auto;
+    }
 
-.navegacion-principal {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 16px 24px;
-    margin: 0 auto;
-}
+
 
 .enlace-principal {
     width: 50%;
@@ -202,11 +203,20 @@ a {
 footer {
     padding: 0 8rem;
 }
+
+.contenedor-footer .enlace-principal {
+    width: 30%;
+}
+
 .contenedor-footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 4rem 2.4rem;
     margin: 0 auto;
-    width: 100%;
     background-color: #F2F4F6;
+}
+
+.contenedor-footer p {
+    width: 40%;
 }
